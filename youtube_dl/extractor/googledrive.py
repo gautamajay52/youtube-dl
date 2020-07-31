@@ -264,7 +264,6 @@ class GoogleDriveIE(InfoExtractor):
             # query string
             subtitles_id = ttsurl.encode('utf-8').decode(
                 'unicode_escape').split('=')[-1]
-        self._downloader.cookiejar.clear(domain='.google.com', path='/', name='NID')
 
         return {
             'id': video_id,
